@@ -195,14 +195,11 @@
   }
   .order-left {
     width: 100%;
-    padding-top: 150px;
+    padding-top: 30px;
     padding-bottom: 30px;
   }
   .order-food-img1 {
-    top: -47px;
-    left: -60px;
-    right: 10px;
-    width: 70%;
+    display: none;
   }
   .order-left h2 {
     font-size: 36px;
@@ -216,7 +213,7 @@
   .order-right {
     width: 100%;
     padding-top: 30px;
-    padding-bottom: 280px;
+    padding-bottom: 300px;
   }
   .order-right-img1 {
     padding-top: 50px;
