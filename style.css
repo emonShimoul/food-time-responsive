@@ -134,6 +134,39 @@
   top: 10px;
   right: -85px;
 }
+.delivered {
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
+  backdrop-filter: blur(6px);
+  border-radius: 8.86914px;
+  width: 245px;
+  height: 118px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 120px;
+  top: 50px;
+  z-index: 1;
+}
+
+.delivered h2 {
+  color: #ff8b00;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 40px;
+  padding-top: 20px;
+}
+.delivered p {
+  color: #838383;
+  font-weight: 600;
+  font-size: 21px;
+  font-family: "Poppins";
+}
 
 /* explore-area section styles */
 .explore-area {
@@ -188,8 +221,11 @@
   position: absolute;
 }
 
-/* media query */
-@media only screen and (max-width: 768px) {
+/* media query for mobile */
+@media only screen and (max-width: 767px) {
+  .banner {
+    padding-bottom: 100px;
+  }
   .order-food {
     flex-direction: column;
   }
@@ -219,7 +255,6 @@
     padding-top: 50px;
   }
   .order-right-img2 {
-    position: absolute;
     top: -5px;
     left: -27px;
   }
@@ -229,7 +264,79 @@
     right: -22px;
     width: 65%;
   }
+  .delivered {
+    right: 0;
+    top: -35px;
+    width: 210px;
+    height: 100px;
+  }
+  .explore-area {
+    padding-top: 0;
+  }
+  .explore {
+    flex-direction: column;
+  }
+  .explore-content {
+    width: 100%;
+    padding-top: 30px;
+    text-align: center;
+  }
+  .explore-content h2 {
+    font-size: 36px;
+  }
+  .explore-img {
+    width: 100%;
+  }
+}
 
+/* responsive for tablet */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .banner {
+    padding-bottom: 310px;
+  }
+  .order-food {
+    flex-direction: column;
+  }
+  .order-left {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .order-food-img1 {
+    display: none;
+  }
+  .order-left h2 {
+    font-size: 36px;
+  }
+  .order-left-location button {
+    padding: 15px 20px;
+  }
+  .order-left-location button i {
+    display: none;
+  }
+  .order-right {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 300px;
+  }
+  .order-right-img1 {
+    width: 80%;
+    padding-top: 50px;
+  }
+  .order-right-img2 {
+    top: 10px;
+    left: -30px;
+  }
+  .order-right-img3 {
+    top: -35px;
+    right: 50px;
+  }
+  .delivered {
+    right: 0;
+    top: -35px;
+    width: 210px;
+    height: 100px;
+  }
   .explore {
     flex-direction: column;
   }
