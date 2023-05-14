@@ -1,5 +1,7 @@
-.navbar {
+.header {
   background-color: #f0f4ec;
+}
+.navbar {
   padding: 20px;
   border-bottom: 2px solid rgba(63, 63, 63, 0.1);
   /* opacity: 0.2; */
@@ -20,7 +22,6 @@
   color: #fff;
   width: 154px;
   height: 58px;
-  /* margin-top: 20px; */
 }
 .cart-logo {
   background: #396c03;
@@ -32,4 +33,89 @@
   justify-content: center;
   margin-left: 20px;
   cursor: pointer;
+}
+
+/* order-food section */
+.banner {
+  border-bottom: 2px solid rgba(63, 63, 63, 0.1);
+  padding-bottom: 150px;
+}
+.order-food {
+  display: flex;
+  position: relative;
+}
+.order-food-img1 {
+  position: absolute;
+  top: -50px;
+  left: -185px;
+}
+.order-left {
+  width: 50%;
+  padding-top: 200px;
+}
+.order-left h2 {
+  font-weight: 500;
+  font-size: 65px;
+  color: #396c03;
+  font-family: "Merienda", cursive;
+  margin-bottom: 27px;
+}
+.order-left p {
+  color: #676767;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.order-left-location {
+  position: relative;
+}
+.order-left-location input {
+  width: 100%;
+  height: 69px;
+  border: 2px solid rgb(57, 108, 3, 0.1);
+  border-radius: 120px;
+  /* position: absolute; */
+  padding-left: 70px;
+}
+.order-left-location .circle {
+  background: #ff8b00;
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.order-left-location button {
+  padding: 15px 50px;
+  background: #396c03;
+  border-radius: 100px;
+  border: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 22px;
+  position: absolute;
+  right: 0px;
+  top: 3px;
+}
+
+.order-right {
+  width: 50%;
+  position: relative;
+}
+.order-right-img1 {
+  width: 100%;
+  padding-top: 100px;
+  position: absolute;
+  z-index: 1;
+}
+.order-right-img2 {
+  position: absolute;
+  top: 90px;
+  left: -58px;
+}
+.order-right-img3 {
+  position: absolute;
+  top: 22px;
+  right: -70px;
 }
