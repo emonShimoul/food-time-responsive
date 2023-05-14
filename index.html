@@ -15,12 +15,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@300&family=Open+Sans:ital@0;1&family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <div class="header">
+    <!-- header section starts -->
+    <section class="header">
+      <!-- nav starts -->
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand" href="#"
@@ -77,11 +79,15 @@
             </div>
             <div class="cart-logo">
               <img src="images/Vector.png" alt="" />
+              <div class="cart-number"><span>2</span></div>
             </div>
           </div>
         </div>
       </nav>
-      <section class="banner">
+      <!-- nav ends -->
+
+      <!-- banner starts -->
+      <div class="banner">
         <div class="container order-food">
           <img
             class="order-food-img1"
@@ -94,7 +100,9 @@
             <div class="mb-3 order-left-location">
               <div class="circle"></div>
               <input type="text" class="" placeholder="Enter Your Location" />
-              <button type="button" id="button-addon2">Search</button>
+              <button type="button" id="button-addon2">
+                Search <i class="fa-solid fa-magnifying-glass ps-2"></i>
+              </button>
             </div>
           </div>
           <div class="order-right">
@@ -111,12 +119,39 @@
             />
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+      <!-- banner ends -->
+    </section>
+    <!-- header section ends -->
 
+    <!-- explore section starts -->
+    <section class="explore-area">
+      <div class="container explore">
+        <div class="explore-content">
+          <h2>Explore your favourite city's food.</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Ornare massa nunc nibh
+            tristique. Non ligula tristique ut ut libero sit convallis maecenas.
+            At egestas auctor porta mattis.
+          </p>
+          <button>
+            Explore <i class="fa-solid fa-arrow-right-long ps-2"></i>
+          </button>
+        </div>
+        <div class="explore-img">
+          <img class="img-building" src="images/image 2.png" alt="" />
+          <img class="img-cycle" src="images/cycle.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- explore section ends -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/5daa505ed9.js"
       crossorigin="anonymous"
     ></script>
   </body>

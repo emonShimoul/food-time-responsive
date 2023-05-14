@@ -4,7 +4,6 @@
 .navbar {
   padding: 20px;
   border-bottom: 2px solid rgba(63, 63, 63, 0.1);
-  /* opacity: 0.2; */
 }
 .navbar-nav li {
   padding: 0 15px;
@@ -33,6 +32,22 @@
   justify-content: center;
   margin-left: 20px;
   cursor: pointer;
+  position: relative;
+}
+.cart-number {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  background: #ff8b00;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -6px;
+  right: -6px;
 }
 
 /* order-food section */
@@ -54,7 +69,7 @@
   padding-top: 200px;
 }
 .order-left h2 {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 65px;
   color: #396c03;
   font-family: "Merienda", cursive;
@@ -111,11 +126,125 @@
 }
 .order-right-img2 {
   position: absolute;
-  top: 90px;
-  left: -58px;
+  top: 80px;
+  left: -50px;
 }
 .order-right-img3 {
   position: absolute;
-  top: 22px;
-  right: -70px;
+  top: 10px;
+  right: -85px;
+}
+
+/* explore-area section styles */
+.explore-area {
+  background-color: #fff9f2;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.explore {
+  display: flex;
+  gap: 50px;
+}
+.explore-content {
+  width: 50%;
+  padding-top: 100px;
+}
+.explore-content h2 {
+  color: #396c03;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 130%;
+  font-family: "Merienda", cursive;
+  margin-bottom: 10px;
+}
+.explore-content p {
+  font-size: 18px;
+  line-height: 160%;
+  color: #676767;
+  font-weight: 400;
+  font-family: "Poppins";
+  margin-bottom: 20px;
+}
+.explore-content button {
+  background: #396c03;
+  border-radius: 224.4px;
+  padding: 15px 60px;
+  border: none;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 22px;
+  color: #ffffff;
+}
+.explore-img {
+  width: 50%;
+  position: relative;
+}
+.img-cycle {
+  width: 100%;
+  position: absolute;
+}
+.img-building {
+  width: 100%;
+  position: absolute;
+}
+
+/* media query */
+@media only screen and (max-width: 768px) {
+  .order-food {
+    flex-direction: column;
+  }
+  .order-left {
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 30px;
+  }
+  .order-food-img1 {
+    top: -47px;
+    left: -60px;
+    right: 10px;
+    width: 70%;
+  }
+  .order-left h2 {
+    font-size: 36px;
+  }
+  .order-left-location button {
+    padding: 15px 20px;
+  }
+  .order-left-location button i {
+    display: none;
+  }
+  .order-right {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 280px;
+  }
+  .order-right-img1 {
+    padding-top: 50px;
+  }
+  .order-right-img2 {
+    position: absolute;
+    top: -5px;
+    left: -27px;
+  }
+  .order-right-img3 {
+    position: absolute;
+    top: -18px;
+    right: -22px;
+    width: 65%;
+  }
+
+  .explore {
+    flex-direction: column;
+  }
+  .explore-content {
+    width: 100%;
+    padding-top: 30px;
+    text-align: center;
+  }
+  .explore-content h2 {
+    font-size: 36px;
+  }
+  .explore-img {
+    width: 100%;
+  }
 }
